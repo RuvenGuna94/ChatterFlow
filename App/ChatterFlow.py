@@ -15,7 +15,8 @@ st.title("ChatterFlow")
 ChatterFlow is an intelligent chatbot powered by **OpenAI** and **Streamlit**, 
 designed to provide an interactive and user-friendly experience. 
 This chatbot leverages natural language processing (NLP) to 
-generate human-like responses and can be easily customized for various use cases.
+generate human-like responses and can be easily customized for various use cases. 
+Note: I will also store our chat history. 😊
 """
 
 USER_AVATAR = "👤"

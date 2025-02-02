@@ -21,3 +21,13 @@ generate human-like responses and can be easily customized for various use cases
 USER_AVATAR = "👤"
 BOT_AVATAR = "🤖"
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+# Ensure openai_model is initialized in session state
+if "openai_model" not in st.session_state:
+    st.session_state["openai_model"] = "gpt-3.5-turbo"
+
+# Create opening message
+if "messages" not in st.session_state:
+    st.session_state["messages"] = [
+        {"role": "assistant", "content": "Hi, I'm ChatterFlow. How can I help you?"}
+    ]

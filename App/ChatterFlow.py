@@ -7,7 +7,12 @@ import shelve
 
 # Get OPENAI API Key
 load_dotenv()
-api_key=os.getenv("OPENAI_API_KEY")
+
+try:
+    api_key=st.write(st.secrets["OPENAI_API_KEY"])
+
+except:
+    api_key=os.getenv("OPENAI_API_KEY")
 
 # Set up the bot
 st.title("ChatterFlow")
@@ -21,7 +26,7 @@ Note: I will also store our chat history. 😊
 
 USER_AVATAR = "👤"
 BOT_AVATAR = "🤖"
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI(api_key=api_key)
 
 # Load chat history from shelve file
 def load_chat_history():

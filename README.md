@@ -5,6 +5,12 @@ ChatterFlow is an intelligent chatbot powered by **OpenAI** and **Streamlit**, d
 
 In this notebook, we will guide you through building a chatbot interface using Streamlit, allowing users to interact with the AI model seamlessly.  
 
+### **Key Features:**  
+✅ **Conversational AI:** Interact with an AI-powered chatbot for seamless Q&A.  
+✅ **Conversation History:** Stores past interactions and allows users to delete them when needed.  
+✅ **User-Friendly Interface:** Built using Streamlit for an intuitive web experience.  
+✅ **Ongoing Enhancements:** Future versions will include improvements in performance, memory handling, and response accuracy.  
+
 
 ## **Why Streamlit?**  
 [Streamlit](https://streamlit.io/) is an open-source Python library that simplifies the creation of interactive web applications for machine learning and data science projects. It is widely used due to its ease of use and minimal coding requirements.  
@@ -27,6 +33,15 @@ While Streamlit is a great choice, there are other ways to build a chatbot inter
 5. **Tkinter/PyQt** – Desktop-based GUI applications instead of web-based interfaces.  
 
 Each of these options comes with trade-offs in terms of complexity, performance, and ease of deployment. Streamlit, however, remains one of the fastest ways to get a chatbot up and running with minimal effort.  
+
+This chatbot is a **work in progress**, and I will be continuously improving its features. Some planned enhancements include:  
+🔹 Integration with web search capability  
+🔹 Expanded capabilities with LangChain
+🔹 Leverage open source LLMs instead of OpenAI
+🔹 Image generation
+🔹 Document summarizer
+🔹 Many more!
+
 
 ## **Getting Started**  
 In the next sections, we will:  

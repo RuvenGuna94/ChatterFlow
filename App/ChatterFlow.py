@@ -48,3 +48,15 @@ if "messages" not in st.session_state:
     st.session_state["messages"] = [
         {"role": "assistant", "content": "Hi, I'm ChatterFlow. How can I help you?"}
     ]
+
+# Sidebar with a button to delete chat history
+with st.sidebar:
+    if st.button("Delete Chat History"):
+        st.session_state.messages = []
+        save_chat_history([])
+
+# Display chat messages
+for message in st.session_state.messages:
+    avatar = USER_AVATAR if message["role"] == "user" else BOT_AVATAR
+    with st.chat_message(message["role"], avatar=avatar):
+        st.markdown(message["content"])

@@ -42,10 +42,48 @@ This chatbot is a **work in progress**, and I will be continuously improving its
 🔹 Document summarizer
 🔹 Many more!
 
-
 ## **Getting Started**  
 In the next sections, we will:  
 ✅ Install necessary dependencies  
 ✅ Set up Streamlit  
 ✅ Integrate OpenAI’s API  
-✅ Build an interactive chatbot interface  
+✅ Build an interactive chatbot interface with conversation history management  
+
+Follow these steps to set up and run the chatbot:
+
+### **Installation**
+
+Clone this repository and navigate into the project directory:
+
+```bash
+git clone https://github.com/ruvenguna94/ChatterFlow.git
+cd ChatterFlow
+```
+
+Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+### **Running the Chatbot**
+
+Run the Streamlit application:
+
+```bash
+streamlit run app.py
+```
+
+This will open a web-based interface where you can interact with the chatbot.
+
+---
+
+## **Contributing**
+
+Contributions are welcome! If you have any suggestions or improvements, feel free to open an issue or submit a pull request.
+
+---
+
+## **License**
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.

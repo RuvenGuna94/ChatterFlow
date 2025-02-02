@@ -27,6 +27,17 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 if "openai_model" not in st.session_state:
     st.session_state["openai_model"] = "gpt-3.5-turbo"
 
+# Load chat history from shelve file
+def load_chat_history():
+    with shelve.open("chat_history") as db:
+        return db.get("messages", [])
+
+
+# Save chat history to shelve file
+def save_chat_history(messages):
+    with shelve.open("chat_history") as db:
+        db["messages"] = messages
+
 # Create opening message
 if "messages" not in st.session_state:
     st.session_state["messages"] = [

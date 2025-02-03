@@ -1,5 +1,7 @@
 # **ChatterFlow: An AI Chatbot with Streamlit**  
 
+Test the bot here: [https://ruvenguna94-chatterflow-appchatterflow-id7wbv.streamlit.app/](https://ruvenguna94-chatterflow-appchatterflow-id7wbv.streamlit.app/)
+
 ## **Introduction**  
 ChatterFlow is an intelligent chatbot powered by **OpenAI** and **Streamlit**, designed to provide an interactive and user-friendly experience. This chatbot leverages natural language processing (NLP) to generate human-like responses and can be easily customized for various use cases.  
 
